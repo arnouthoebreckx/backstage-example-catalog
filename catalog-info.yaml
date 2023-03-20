@@ -1,0 +1,15 @@
+---
+# Source: backstage-catalog-sandbox/templates/api.yaml
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: "streetlights-kafka"
+  description: |
+    The Smartylighting Streetlights API allows you to remotely manage the city lights.
+  links: []
+spec:
+  type: asyncapi
+  lifecycle: WIP
+  owner: guest
+  definition:
+    $text: ./asyncapi/streetlights-kafka.yaml
